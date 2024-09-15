@@ -7,13 +7,11 @@ openbtn.addEventListener("click", function() {
     modal.classList.add('hi');
 });
 
-// Ensure the close button works
 closebtn.addEventListener("click", function() {
     modalContainer.style.display = "none";
     modal.classList.remove('hi');
 });
 
-// Ensure clicking outside the modal closes it
 window.addEventListener("click", function(e) {
     if (e.target === modalContainer) {
         modalContainer.style.display = 'none';
